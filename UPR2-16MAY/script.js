@@ -249,6 +249,8 @@ function dynamicRobot() {
         messageContentEl.textContent = inputEl.value;
         spanMessage.textContent = `  ${currentTime}`;
         robotMessageEl.appendChild(spanMessage);
+        let sound = new Audio("sound.mp3")
+        sound.play();
       })
       inputEl.value = "";
     }
